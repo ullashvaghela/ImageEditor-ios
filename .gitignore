@@ -17,6 +17,7 @@ profile
 DerivedData
 *.hmap
 *.ipa
+*.DS_Store
 
 
 

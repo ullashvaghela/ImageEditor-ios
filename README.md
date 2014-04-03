@@ -24,8 +24,8 @@ Get more info and downloads of ImageEditor (for iOS and Android) via [the ImageE
 	* [Tilt Shift]: Tilt-Shift gives images the depth-of-field and other visual effects normally seen only on professional grade DSLR cameras, using a mix of clear focus and selective blurring to create magnificent photos.
 
 * Great performance: Low memory usage and amazingly fast.
-	* Real time performance:
-	* Produce Output image performance: 
+	* Real time performance: 20 ~ 40MB transient memory. All of the fine adjustment controls in ImageEditor are smoothly applied in real time.
+	* Generate Output image performance: high-quality and fast processing, support 500MP image. (need [higher image processing resolution](http://www.fotor.com) ?)
 
 * Flexibility:
 	* Easy to use interface:

@@ -2,6 +2,8 @@
 
 **ImageEditor** is an omnipotent image editor which is based on [FotorSDK](https://github.com/Fotor).
 
+![sample](demo.jpg)
+
 Get more info and downloads of ImageEditor (for iOS and Android) via [the ImageEditor mobile portal](https://github.com/koluray?tab=repositories)
 
 [Click here for **official documentation for ImageEditor-iOS**](https://github.com/koluray/ImageEditor-ios/wiki)
@@ -9,8 +11,6 @@ Get more info and downloads of ImageEditor (for iOS and Android) via [the ImageE
 **omnipotent** means:
 
 * Plentiful features: ImageEditor currently support a mount of features as below
-
-![sample](demo.jpg)
 
 	* [Auto Enhance]: One-Tap Enhance can automatically transform boring photos into masterpieces.
 	* [Scenes]: Exclusive-Sophisticated photo-enhancement technology offers 13 different scenes options that automatically optimize the photo depending on the conditions when it was taken.

@@ -9,6 +9,7 @@ Get more info and downloads of ImageEditor (for iOS and Android) via [the ImageE
 **omnipotent** means:
 
 * Plentiful features: ImageEditor currently support a mount of features as below
+	![sample](Demo/CLImageEditorDemo/CLImageEditorDemo/sample.jpg)
 	* [Auto Enhance]: One-Tap Enhance can automatically transform boring photos into masterpieces.
 	* [Scenes]: Exclusive-Sophisticated photo-enhancement technology offers 13 different scenes options that automatically optimize the photo depending on the conditions when it was taken.
 	* [Base Adjust]: Modify brightness, contrast, saturation, and sharpness with our easy tools.
@@ -32,10 +33,11 @@ Get more info and downloads of ImageEditor (for iOS and Android) via [the ImageE
 * Compatibility: 
 	* Hardware: Compatible with iPhone, iPad, and iPod touch.
 	* iOS: Compatible with iOS 6.0 or higher.
+	* GUI: Compatible with ipad and iphone.
 
 ## More Information
 
-* There's lots more information on the [wiki][2].
+* There's lots more information on the [wiki](wiki).
 
 ## Requirements ##
 
@@ -49,6 +51,6 @@ Get more info and downloads of ImageEditor (for iOS and Android) via [the ImageE
  
 ## License ##
 
- * ImageEditor-iOS is under the MIT License.
+ * ImageEditor-iOS is released under the MIT License.
 
-This is permissive, commercial-friendly licenses. For details read the individual licenses.
+This is a permissive, commercial-friendly license. For details read the individual [LICENSE](LICENSE).

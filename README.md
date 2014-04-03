@@ -27,14 +27,14 @@ Get more info and downloads of ImageEditor (for iOS and Android) via [the ImageE
 	* Real time performance: 20 ~ 40MB transient memory. All of the fine adjustment controls in ImageEditor are smoothly applied in real time.
 	* Generate Output image performance: high-quality and fast processing, support 500MP image. (need [higher image processing resolution](http://www.fotor.com) ?)
 
-* Flexibility:
-	* Easy to use interface:
-	* Configurable features:
+* Flexibility: Owing to the powerful [FotorSDK](https://github.com/Fotor), ImageEditor has a high flexibility.
+	* Easy to use interface
+	* Configurable features
 
 * Compatibility: 
 	* Hardware: Compatible with iPhone, iPad, and iPod touch.
 	* iOS: Compatible with iOS 6.0 or higher.
-	* GUI layout: Compatible with iPad and iPhone.
+	* GUI layout: The easiest and best iOS7-inspired interface, compatible with iPad and iPhone.
 
 ## More Information
 

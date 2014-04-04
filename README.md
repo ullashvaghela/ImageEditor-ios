@@ -4,7 +4,7 @@
 
 ![sample](demo.jpg)
 
-Get more info and downloads of ImageEditor (for iOS and Android) via [the ImageEditor mobile portal](https://github.com/koluray?tab=repositories)
+Get more info and downloads of [ImageEditor](https://github.com/koluray/ImageEditor-ios.git) (for iOS and Android) via [the ImageEditor mobile portal](https://github.com/koluray?tab=repositories)
 
 [Click here for **official documentation for ImageEditor-iOS**](https://github.com/koluray/ImageEditor-ios/wiki)
 

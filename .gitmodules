@@ -1,0 +1,3 @@
+[submodule "EIPhotoEditor/FotorSDK-iOS"]
+	path = EIPhotoEditor/FotorSDK-iOS
+	url = https://github.com/Fotor/FotorSDK-iOS.git

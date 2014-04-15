@@ -1,0 +1,40 @@
+{
+    "version": "1",
+    "packageKey": "com.everimaging.photosdk.effect.1",
+    "title": "Analog",
+    "iconName":"edit_two_menu_effects_style_1",
+    "classes": [
+                {
+                "id": "11",
+                "title": "Pittsburgh"
+                },
+                {
+                "id": "74",
+                "title": "Dawn Light"
+                },
+                {
+                "id": "76",
+                "title": "Nostalgic"
+                },
+                {
+                "id": "75",
+                "title": "Real-illusion"
+                },
+                {
+                "id": "73",
+                "title": "Mini-Oven"
+                },
+                {
+                "id": "80",
+                "title": "RedWash"
+                },
+                {
+                "id": "78",
+                "title": "HotFudge"
+                },
+                {
+                "id": "27",
+                "title": "Straight Ink"
+                }
+                ]
+}

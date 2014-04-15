@@ -1,0 +1,48 @@
+{
+    "version": "1",
+    "packageKey": "com.everimaging.photosdk.frame.1",
+    "title": "Simple",
+    "iconName":"edit_two_menu_frames_style_1",
+    "classes": [
+                {
+                "id": "43",
+                "title": "Memory",
+                "type": "S",
+                "resName": "43S.png",
+                "mThickness": "0.05",
+                "sThickness": "0.05"
+                },
+                {
+                "id": "30",
+                "title": "Old TV",
+                "type": "S",
+                "resName": "30S.png",
+                "mThickness": "0.05",
+                "sThickness": "0.05"
+                },
+                {
+                "id": "51",
+                "title": "Oil Slick",
+                "type": "S",
+                "resName": "51S.png",
+                "mThickness": "0.05",
+                "sThickness": "0.05"
+                },
+                {
+                "id": "49",
+                "title": "Moment",
+                "type": "S",
+                "resName": "49S.png",
+                "mThickness": "0.05",
+                "sThickness": "0.05"
+                },
+                {
+                "id": "37",
+                "title": "Film",
+                "type": "S",
+                "resName": "37S.png",
+                "mThickness": "0.05",
+                "sThickness": "0.05"
+                }
+                ]
+}

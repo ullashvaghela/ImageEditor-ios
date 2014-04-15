@@ -1,0 +1,85 @@
+{
+    "version": "1",
+    "packageKey": "com.everimaging.photosdk.sticker.6",
+    "title": "Travel",
+    "iconName": "edit_two_menu_stickers_style_6",
+    "orderWeight": "6",
+    "classInfo":[
+                 {
+                 "id": "1",
+                 "resName": "stickers_travel_1"
+                 },
+                 {
+                 "id": "2",
+                 "resName": "stickers_travel_2"
+                 },
+                 {
+                 "id": "3",
+                 "resName": "stickers_travel_3"
+                 },
+                 {
+                 "id": "4",
+                 "resName": "stickers_travel_4"
+                 },
+                 {
+                 "id": "5",
+                 "resName": "stickers_travel_5"
+                 },
+                 {
+                 "id": "6",
+                 "resName": "stickers_travel_6"
+                 },
+                 {
+                 "id": "7",
+                 "resName": "stickers_travel_7"
+                 },
+                 {
+                 "id": "8",
+                 "resName": "stickers_travel_8"
+                 },
+                 {
+                 "id": "9",
+                 "resName": "stickers_travel_9"
+                 },
+                 {
+                 "id": "10",
+                 "resName": "stickers_travel_10"
+                 },
+                 {
+                 "id": "11",
+                 "resName": "stickers_travel_11"
+                 },
+                 {
+                 "id": "12",
+                 "resName": "stickers_travel_12"
+                 },
+                 {
+                 "id": "13",
+                 "resName": "stickers_travel_13"
+                 },
+                 {
+                 "id": "14",
+                 "resName": "stickers_travel_14"
+                 },
+                 {
+                 "id": "15",
+                 "resName": "stickers_travel_15"
+                 },
+                 {
+                 "id": "16",
+                 "resName": "stickers_travel_16"
+                 },
+                 {
+                 "id": "17",
+                 "resName": "stickers_travel_17"
+                 },
+                 {
+                 "id": "18",
+                 "resName": "stickers_travel_18"
+                 },
+                 {
+                 "id": "20",
+                 "resName": "stickers_travel_20"
+                 }
+                 ]
+}

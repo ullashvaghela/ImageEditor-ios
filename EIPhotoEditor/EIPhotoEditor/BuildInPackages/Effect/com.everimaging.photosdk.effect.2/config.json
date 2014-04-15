@@ -1,0 +1,40 @@
+{
+    "version": "1",
+    "packageKey": "com.everimaging.photosdk.effect.2",
+    "title": "Lomo",
+    "iconName":"edit_two_menu_effects_style_2",
+    "classes": [
+                {
+                "id": "103",
+                "title": "Nashville"
+                },
+                {
+                "id": "1",
+                "title": "Angel's Kiss"
+                },
+                {
+                "id": "7",
+                "title": "Warm Yellow"
+                },
+                {
+                "id": "10",
+                "title": "X-ProII"
+                },
+                {
+                "id": "102",
+                "title": "Lomo-Fx"
+                },
+                {
+                "id": "5",
+                "title": "Lomo Life"
+                },
+                {
+                "id": "23",
+                "title": "Earlybird"
+                },
+                {
+                "id": "4",
+                "title": "Blue Sepia"
+                }
+                ]
+}

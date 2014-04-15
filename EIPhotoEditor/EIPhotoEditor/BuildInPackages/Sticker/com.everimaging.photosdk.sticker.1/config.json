@@ -1,0 +1,43 @@
+{
+    "version": "1",
+    "packageKey": "com.everimaging.photosdk.sticker.1",
+    "title": "Happy Time",
+    "iconName": "edit_two_menu_stickers_style_5",
+    "orderWeight": "4",
+    "classInfo":[
+                 {
+                 "id": "1",
+                 "resName": "stickers_text_1",
+                 "enableColor": "1",
+                 },
+                 {
+                 "id": "2",
+                 "resName": "stickers_text_2",
+                 "enableColor": "1",
+                 },
+                 {
+                 "id": "3",
+                 "resName": "stickers_text_3",
+                 "enableColor": "1",
+                 },
+                 {
+                 "id": "4",
+                 "resName": "stickers_text_4",
+                 "enableColor": "1",
+                 },
+                 {
+                 "id": "5",
+                 "resName": "stickers_text_5",
+                 "enableColor": "1",
+                 },
+                 {
+                 "id": "6",
+                 "resName": "stickers_text_6"
+                 },
+                 {
+                 "id": "7",
+                 "resName": "stickers_text_7",
+                 "enableColor": "1",
+                 }
+                 ]
+}

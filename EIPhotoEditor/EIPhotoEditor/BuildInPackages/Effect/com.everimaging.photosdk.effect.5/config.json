@@ -1,0 +1,28 @@
+{
+    "version": "1",
+    "packageKey": "com.everimaging.photosdk.effect.5",
+    "title": "Vintage",
+    "iconName":"edit_two_menu_effects_style_5",
+    "classes": [
+                {
+                "id": "108",
+                "title": "Blue"
+                },
+                {
+                "id": "109",
+                "title": "Virginia"
+                },
+                {
+                "id": "110",
+                "title": "DeepBlue"
+                },
+                {
+                "id": "93",
+                "title": "GreenGlow"
+                },
+                {
+                "id": "6",
+                "title": "Sunset"
+                }
+                ]
+}

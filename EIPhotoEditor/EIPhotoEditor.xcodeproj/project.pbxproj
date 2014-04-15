@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65403D7818ECF822009B074D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51F1ADF18E26E1B00555468 /* AVFoundation.framework */; };
+		65403D7918ECF85F009B074D /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51F1AE018E26E1B00555468 /* GLKit.framework */; };
+		65403D7A18ECF86E009B074D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51F1ADD18E26DF500555468 /* CoreMedia.framework */; };
+		654F55D318FD2C4F0037BB6B /* EIPhotoSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 654F55CB18FD2C4F0037BB6B /* EIPhotoSDKResources.bundle */; };
+		654F55D418FD2C4F0037BB6B /* libEIPhotoSDKLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 654F55D218FD2C4F0037BB6B /* libEIPhotoSDKLibrary.a */; };
+		D5034FBA18E2C3D700CD4E2E /* EIPhotoSDKLocalSetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5034FB918E2C3D700CD4E2E /* EIPhotoSDKLocalSetting.plist */; };
+		D5034FC018E2C3E200CD4E2E /* com.everimaging.photosdk.effect.1 in Resources */ = {isa = PBXBuildFile; fileRef = D5034FBB18E2C3E200CD4E2E /* com.everimaging.photosdk.effect.1 */; };
+		D5034FC118E2C3E200CD4E2E /* com.everimaging.photosdk.effect.2 in Resources */ = {isa = PBXBuildFile; fileRef = D5034FBC18E2C3E200CD4E2E /* com.everimaging.photosdk.effect.2 */; };
+		D5034FC218E2C3E200CD4E2E /* com.everimaging.photosdk.effect.3 in Resources */ = {isa = PBXBuildFile; fileRef = D5034FBD18E2C3E200CD4E2E /* com.everimaging.photosdk.effect.3 */; };
+		D5034FC318E2C3E200CD4E2E /* com.everimaging.photosdk.effect.4 in Resources */ = {isa = PBXBuildFile; fileRef = D5034FBE18E2C3E200CD4E2E /* com.everimaging.photosdk.effect.4 */; };
+		D5034FC418E2C3E200CD4E2E /* com.everimaging.photosdk.effect.5 in Resources */ = {isa = PBXBuildFile; fileRef = D5034FBF18E2C3E200CD4E2E /* com.everimaging.photosdk.effect.5 */; };
+		D5034FC818E2C3EA00CD4E2E /* com.everimaging.photosdk.frame.1 in Resources */ = {isa = PBXBuildFile; fileRef = D5034FC518E2C3EA00CD4E2E /* com.everimaging.photosdk.frame.1 */; };
+		D5034FC918E2C3EA00CD4E2E /* com.everimaging.photosdk.frame.2 in Resources */ = {isa = PBXBuildFile; fileRef = D5034FC618E2C3EA00CD4E2E /* com.everimaging.photosdk.frame.2 */; };
+		D5034FCA18E2C3EA00CD4E2E /* com.everimaging.photosdk.frame.3 in Resources */ = {isa = PBXBuildFile; fileRef = D5034FC718E2C3EA00CD4E2E /* com.everimaging.photosdk.frame.3 */; };
+		D5034FCD18E2C3F100CD4E2E /* com.everimaging.photosdk.font.1 in Resources */ = {isa = PBXBuildFile; fileRef = D5034FCB18E2C3F100CD4E2E /* com.everimaging.photosdk.font.1 */; };
+		D5034FCE18E2C3F100CD4E2E /* com.everimaging.photosdk.font.2 in Resources */ = {isa = PBXBuildFile; fileRef = D5034FCC18E2C3F100CD4E2E /* com.everimaging.photosdk.font.2 */; };
+		D5034FD518E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.1 in Resources */ = {isa = PBXBuildFile; fileRef = D5034FCF18E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.1 */; };
+		D5034FD618E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.2 in Resources */ = {isa = PBXBuildFile; fileRef = D5034FD018E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.2 */; };
+		D5034FD718E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.3 in Resources */ = {isa = PBXBuildFile; fileRef = D5034FD118E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.3 */; };
+		D5034FD818E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.4 in Resources */ = {isa = PBXBuildFile; fileRef = D5034FD218E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.4 */; };
+		D5034FD918E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.5 in Resources */ = {isa = PBXBuildFile; fileRef = D5034FD318E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.5 */; };
+		D5034FDA18E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.6 in Resources */ = {isa = PBXBuildFile; fileRef = D5034FD418E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.6 */; };
+		D5034FE318E2CC2400CD4E2E /* sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5034FE218E2CC2400CD4E2E /* sample.jpg */; };
+		D514C6FB18EBF44F00CF9C06 /* sdk_edit_fotor_sdk.png in Resources */ = {isa = PBXBuildFile; fileRef = D514C6F918EBF44F00CF9C06 /* sdk_edit_fotor_sdk.png */; };
+		D514C6FC18EBF44F00CF9C06 /* sdk_edit_fotor_sdk@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D514C6FA18EBF44F00CF9C06 /* sdk_edit_fotor_sdk@2x.png */; };
+		D514C70318EC139E00CF9C06 /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D514C70218EC139E00CF9C06 /* MyButton.m */; };
+		D51F1AA318E26B2600555468 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51F1AA218E26B2600555468 /* Foundation.framework */; };
+		D51F1AA518E26B2600555468 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51F1AA418E26B2600555468 /* CoreGraphics.framework */; };
+		D51F1AA718E26B2600555468 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51F1AA618E26B2600555468 /* UIKit.framework */; };
+		D51F1AAD18E26B2600555468 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D51F1AAB18E26B2600555468 /* InfoPlist.strings */; };
+		D51F1AAF18E26B2600555468 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D51F1AAE18E26B2600555468 /* main.m */; };
+		D51F1AB318E26B2600555468 /* EIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D51F1AB218E26B2600555468 /* EIAppDelegate.m */; };
+		D51F1AB518E26B2600555468 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D51F1AB418E26B2600555468 /* Images.xcassets */; };
+		D51F1ABC18E26B2600555468 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51F1ABB18E26B2600555468 /* XCTest.framework */; };
+		D51F1ABD18E26B2600555468 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51F1AA218E26B2600555468 /* Foundation.framework */; };
+		D51F1ABE18E26B2600555468 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51F1AA618E26B2600555468 /* UIKit.framework */; };
+		D51F1AC618E26B2600555468 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D51F1AC418E26B2600555468 /* InfoPlist.strings */; };
+		D51F1AC818E26B2600555468 /* EIPhotoEditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D51F1AC718E26B2600555468 /* EIPhotoEditorTests.m */; };
+		D51F1AD418E26B4E00555468 /* EIMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D51F1AD218E26B4E00555468 /* EIMainViewController.m */; };
+		D51F1AE418E26E1B00555468 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51F1AE118E26E1B00555468 /* OpenGLES.framework */; };
+		D51F1AE618E26E4E00555468 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51F1AE518E26E4E00555468 /* AssetsLibrary.framework */; };
+		D51F1AE918E26E5E00555468 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D51F1AE718E26E5E00555468 /* libc++.dylib */; };
+		D51F1AEA18E26E5E00555468 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D51F1AE818E26E5E00555468 /* libstdc++.dylib */; };
+		D51F1AFE18E2A4CC00555468 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51F1AF918E2A34700555468 /* CoreData.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D51F1ABF18E26B2600555468 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D51F1A9718E26B2600555468 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D51F1A9E18E26B2600555468;
+			remoteInfo = EIPhotoEditor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		654F55CB18FD2C4F0037BB6B /* EIPhotoSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EIPhotoSDKResources.bundle; sourceTree = "<group>"; };
+		654F55CD18FD2C4F0037BB6B /* EIPhotoEditorCustomization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EIPhotoEditorCustomization.h; sourceTree = "<group>"; };
+		654F55CE18FD2C4F0037BB6B /* EIPhotoSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EIPhotoSDK.h; sourceTree = "<group>"; };
+		654F55CF18FD2C4F0037BB6B /* EIPhotoSDKContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EIPhotoSDKContext.h; sourceTree = "<group>"; };
+		654F55D018FD2C4F0037BB6B /* EIPhotoSDKEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EIPhotoSDKEditorController.h; sourceTree = "<group>"; };
+		654F55D118FD2C4F0037BB6B /* EIPhotoSDKSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EIPhotoSDKSession.h; sourceTree = "<group>"; };
+		654F55D218FD2C4F0037BB6B /* libEIPhotoSDKLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libEIPhotoSDKLibrary.a; sourceTree = "<group>"; };
+		D5034FB918E2C3D700CD4E2E /* EIPhotoSDKLocalSetting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = EIPhotoSDKLocalSetting.plist; path = BuildInPackages/EIPhotoSDKLocalSetting.plist; sourceTree = "<group>"; };
+		D5034FBB18E2C3E200CD4E2E /* com.everimaging.photosdk.effect.1 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = com.everimaging.photosdk.effect.1; path = BuildInPackages/Effect/com.everimaging.photosdk.effect.1; sourceTree = "<group>"; };
+		D5034FBC18E2C3E200CD4E2E /* com.everimaging.photosdk.effect.2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = com.everimaging.photosdk.effect.2; path = BuildInPackages/Effect/com.everimaging.photosdk.effect.2; sourceTree = "<group>"; };
+		D5034FBD18E2C3E200CD4E2E /* com.everimaging.photosdk.effect.3 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = com.everimaging.photosdk.effect.3; path = BuildInPackages/Effect/com.everimaging.photosdk.effect.3; sourceTree = "<group>"; };
+		D5034FBE18E2C3E200CD4E2E /* com.everimaging.photosdk.effect.4 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = com.everimaging.photosdk.effect.4; path = BuildInPackages/Effect/com.everimaging.photosdk.effect.4; sourceTree = "<group>"; };
+		D5034FBF18E2C3E200CD4E2E /* com.everimaging.photosdk.effect.5 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = com.everimaging.photosdk.effect.5; path = BuildInPackages/Effect/com.everimaging.photosdk.effect.5; sourceTree = "<group>"; };
+		D5034FC518E2C3EA00CD4E2E /* com.everimaging.photosdk.frame.1 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = com.everimaging.photosdk.frame.1; path = BuildInPackages/Frame/com.everimaging.photosdk.frame.1; sourceTree = "<group>"; };
+		D5034FC618E2C3EA00CD4E2E /* com.everimaging.photosdk.frame.2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = com.everimaging.photosdk.frame.2; path = BuildInPackages/Frame/com.everimaging.photosdk.frame.2; sourceTree = "<group>"; };
+		D5034FC718E2C3EA00CD4E2E /* com.everimaging.photosdk.frame.3 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = com.everimaging.photosdk.frame.3; path = BuildInPackages/Frame/com.everimaging.photosdk.frame.3; sourceTree = "<group>"; };
+		D5034FCB18E2C3F100CD4E2E /* com.everimaging.photosdk.font.1 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = com.everimaging.photosdk.font.1; path = BuildInPackages/Font/com.everimaging.photosdk.font.1; sourceTree = "<group>"; };
+		D5034FCC18E2C3F100CD4E2E /* com.everimaging.photosdk.font.2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = com.everimaging.photosdk.font.2; path = BuildInPackages/Font/com.everimaging.photosdk.font.2; sourceTree = "<group>"; };
+		D5034FCF18E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.1 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = com.everimaging.photosdk.sticker.1; path = BuildInPackages/Sticker/com.everimaging.photosdk.sticker.1; sourceTree = "<group>"; };
+		D5034FD018E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = com.everimaging.photosdk.sticker.2; path = BuildInPackages/Sticker/com.everimaging.photosdk.sticker.2; sourceTree = "<group>"; };
+		D5034FD118E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.3 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = com.everimaging.photosdk.sticker.3; path = BuildInPackages/Sticker/com.everimaging.photosdk.sticker.3; sourceTree = "<group>"; };
+		D5034FD218E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.4 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = com.everimaging.photosdk.sticker.4; path = BuildInPackages/Sticker/com.everimaging.photosdk.sticker.4; sourceTree = "<group>"; };
+		D5034FD318E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.5 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = com.everimaging.photosdk.sticker.5; path = BuildInPackages/Sticker/com.everimaging.photosdk.sticker.5; sourceTree = "<group>"; };
+		D5034FD418E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.6 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = com.everimaging.photosdk.sticker.6; path = BuildInPackages/Sticker/com.everimaging.photosdk.sticker.6; sourceTree = "<group>"; };
+		D5034FE218E2CC2400CD4E2E /* sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample.jpg; sourceTree = "<group>"; };
+		D514C6F918EBF44F00CF9C06 /* sdk_edit_fotor_sdk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sdk_edit_fotor_sdk.png; sourceTree = "<group>"; };
+		D514C6FA18EBF44F00CF9C06 /* sdk_edit_fotor_sdk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sdk_edit_fotor_sdk@2x.png"; sourceTree = "<group>"; };
+		D514C70118EC139E00CF9C06 /* MyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyButton.h; sourceTree = "<group>"; };
+		D514C70218EC139E00CF9C06 /* MyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyButton.m; sourceTree = "<group>"; };
+		D51F1A9F18E26B2600555468 /* EIPhotoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EIPhotoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D51F1AA218E26B2600555468 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D51F1AA418E26B2600555468 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D51F1AA618E26B2600555468 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D51F1AAA18E26B2600555468 /* EIPhotoEditor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EIPhotoEditor-Info.plist"; sourceTree = "<group>"; };
+		D51F1AAC18E26B2600555468 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D51F1AAE18E26B2600555468 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D51F1AB018E26B2600555468 /* EIPhotoEditor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EIPhotoEditor-Prefix.pch"; sourceTree = "<group>"; };
+		D51F1AB118E26B2600555468 /* EIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EIAppDelegate.h; sourceTree = "<group>"; };
+		D51F1AB218E26B2600555468 /* EIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EIAppDelegate.m; sourceTree = "<group>"; };
+		D51F1AB418E26B2600555468 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D51F1ABA18E26B2600555468 /* EIPhotoEditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EIPhotoEditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D51F1ABB18E26B2600555468 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D51F1AC318E26B2600555468 /* EIPhotoEditorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EIPhotoEditorTests-Info.plist"; sourceTree = "<group>"; };
+		D51F1AC518E26B2600555468 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D51F1AC718E26B2600555468 /* EIPhotoEditorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EIPhotoEditorTests.m; sourceTree = "<group>"; };
+		D51F1AD118E26B4E00555468 /* EIMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EIMainViewController.h; sourceTree = "<group>"; };
+		D51F1AD218E26B4E00555468 /* EIMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EIMainViewController.m; sourceTree = "<group>"; };
+		D51F1ADD18E26DF500555468 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		D51F1ADF18E26E1B00555468 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D51F1AE018E26E1B00555468 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		D51F1AE118E26E1B00555468 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		D51F1AE518E26E4E00555468 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		D51F1AE718E26E5E00555468 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		D51F1AE818E26E5E00555468 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		D51F1AF718E2A31700555468 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		D51F1AF918E2A34700555468 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D51F1AFB18E2A39C00555468 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D51F1A9C18E26B2600555468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65403D7A18ECF86E009B074D /* CoreMedia.framework in Frameworks */,
+				65403D7918ECF85F009B074D /* GLKit.framework in Frameworks */,
+				65403D7818ECF822009B074D /* AVFoundation.framework in Frameworks */,
+				654F55D418FD2C4F0037BB6B /* libEIPhotoSDKLibrary.a in Frameworks */,
+				D51F1AFE18E2A4CC00555468 /* CoreData.framework in Frameworks */,
+				D51F1AE918E26E5E00555468 /* libc++.dylib in Frameworks */,
+				D51F1AEA18E26E5E00555468 /* libstdc++.dylib in Frameworks */,
+				D51F1AE618E26E4E00555468 /* AssetsLibrary.framework in Frameworks */,
+				D51F1AE418E26E1B00555468 /* OpenGLES.framework in Frameworks */,
+				D51F1AA518E26B2600555468 /* CoreGraphics.framework in Frameworks */,
+				D51F1AA718E26B2600555468 /* UIKit.framework in Frameworks */,
+				D51F1AA318E26B2600555468 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D51F1AB718E26B2600555468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D51F1ABC18E26B2600555468 /* XCTest.framework in Frameworks */,
+				D51F1ABE18E26B2600555468 /* UIKit.framework in Frameworks */,
+				D51F1ABD18E26B2600555468 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		654F55CA18FD2C4F0037BB6B /* FotorSDK */ = {
+			isa = PBXGroup;
+			children = (
+				654F55CB18FD2C4F0037BB6B /* EIPhotoSDKResources.bundle */,
+				654F55CC18FD2C4F0037BB6B /* Headers */,
+				654F55D218FD2C4F0037BB6B /* libEIPhotoSDKLibrary.a */,
+			);
+			path = FotorSDK;
+			sourceTree = "<group>";
+		};
+		654F55CC18FD2C4F0037BB6B /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				654F55CD18FD2C4F0037BB6B /* EIPhotoEditorCustomization.h */,
+				654F55CE18FD2C4F0037BB6B /* EIPhotoSDK.h */,
+				654F55CF18FD2C4F0037BB6B /* EIPhotoSDKContext.h */,
+				654F55D018FD2C4F0037BB6B /* EIPhotoSDKEditorController.h */,
+				654F55D118FD2C4F0037BB6B /* EIPhotoSDKSession.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		D5034FB418E2C2FE00CD4E2E /* BuildInPackages */ = {
+			isa = PBXGroup;
+			children = (
+				D5034FB918E2C3D700CD4E2E /* EIPhotoSDKLocalSetting.plist */,
+				D5034FB818E2C31900CD4E2E /* Effect */,
+				D5034FB718E2C31400CD4E2E /* Frame */,
+				D5034FB618E2C30900CD4E2E /* Font */,
+				D5034FB518E2C30200CD4E2E /* Sticker */,
+			);
+			name = BuildInPackages;
+			sourceTree = "<group>";
+		};
+		D5034FB518E2C30200CD4E2E /* Sticker */ = {
+			isa = PBXGroup;
+			children = (
+				D5034FCF18E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.1 */,
+				D5034FD018E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.2 */,
+				D5034FD118E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.3 */,
+				D5034FD218E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.4 */,
+				D5034FD318E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.5 */,
+				D5034FD418E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.6 */,
+			);
+			name = Sticker;
+			sourceTree = "<group>";
+		};
+		D5034FB618E2C30900CD4E2E /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				D5034FCB18E2C3F100CD4E2E /* com.everimaging.photosdk.font.1 */,
+				D5034FCC18E2C3F100CD4E2E /* com.everimaging.photosdk.font.2 */,
+			);
+			name = Font;
+			sourceTree = "<group>";
+		};
+		D5034FB718E2C31400CD4E2E /* Frame */ = {
+			isa = PBXGroup;
+			children = (
+				D5034FC518E2C3EA00CD4E2E /* com.everimaging.photosdk.frame.1 */,
+				D5034FC618E2C3EA00CD4E2E /* com.everimaging.photosdk.frame.2 */,
+				D5034FC718E2C3EA00CD4E2E /* com.everimaging.photosdk.frame.3 */,
+			);
+			name = Frame;
+			sourceTree = "<group>";
+		};
+		D5034FB818E2C31900CD4E2E /* Effect */ = {
+			isa = PBXGroup;
+			children = (
+				D5034FBB18E2C3E200CD4E2E /* com.everimaging.photosdk.effect.1 */,
+				D5034FBC18E2C3E200CD4E2E /* com.everimaging.photosdk.effect.2 */,
+				D5034FBD18E2C3E200CD4E2E /* com.everimaging.photosdk.effect.3 */,
+				D5034FBE18E2C3E200CD4E2E /* com.everimaging.photosdk.effect.4 */,
+				D5034FBF18E2C3E200CD4E2E /* com.everimaging.photosdk.effect.5 */,
+			);
+			name = Effect;
+			sourceTree = "<group>";
+		};
+		D51F1A9618E26B2600555468 = {
+			isa = PBXGroup;
+			children = (
+				D51F1AA818E26B2600555468 /* EIPhotoEditor */,
+				D51F1AC118E26B2600555468 /* EIPhotoEditorTests */,
+				D51F1AA118E26B2600555468 /* Frameworks */,
+				D51F1AA018E26B2600555468 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D51F1AA018E26B2600555468 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D51F1A9F18E26B2600555468 /* EIPhotoEditor.app */,
+				D51F1ABA18E26B2600555468 /* EIPhotoEditorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D51F1AA118E26B2600555468 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D51F1AFB18E2A39C00555468 /* MobileCoreServices.framework */,
+				D51F1AF918E2A34700555468 /* CoreData.framework */,
+				D51F1AF718E2A31700555468 /* ImageIO.framework */,
+				D51F1AE718E26E5E00555468 /* libc++.dylib */,
+				D51F1AE818E26E5E00555468 /* libstdc++.dylib */,
+				D51F1AE518E26E4E00555468 /* AssetsLibrary.framework */,
+				D51F1ADF18E26E1B00555468 /* AVFoundation.framework */,
+				D51F1AE018E26E1B00555468 /* GLKit.framework */,
+				D51F1AE118E26E1B00555468 /* OpenGLES.framework */,
+				D51F1ADD18E26DF500555468 /* CoreMedia.framework */,
+				D51F1AA218E26B2600555468 /* Foundation.framework */,
+				D51F1AA418E26B2600555468 /* CoreGraphics.framework */,
+				D51F1AA618E26B2600555468 /* UIKit.framework */,
+				D51F1ABB18E26B2600555468 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D51F1AA818E26B2600555468 /* EIPhotoEditor */ = {
+			isa = PBXGroup;
+			children = (
+				654F55CA18FD2C4F0037BB6B /* FotorSDK */,
+				D5034FB418E2C2FE00CD4E2E /* BuildInPackages */,
+				D51F1AD118E26B4E00555468 /* EIMainViewController.h */,
+				D51F1AD218E26B4E00555468 /* EIMainViewController.m */,
+				D51F1AB118E26B2600555468 /* EIAppDelegate.h */,
+				D51F1AB218E26B2600555468 /* EIAppDelegate.m */,
+				D514C70118EC139E00CF9C06 /* MyButton.h */,
+				D514C70218EC139E00CF9C06 /* MyButton.m */,
+				D51F1AB418E26B2600555468 /* Images.xcassets */,
+				D51F1AA918E26B2600555468 /* Supporting Files */,
+			);
+			path = EIPhotoEditor;
+			sourceTree = "<group>";
+		};
+		D51F1AA918E26B2600555468 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D514C6F918EBF44F00CF9C06 /* sdk_edit_fotor_sdk.png */,
+				D514C6FA18EBF44F00CF9C06 /* sdk_edit_fotor_sdk@2x.png */,
+				D5034FE218E2CC2400CD4E2E /* sample.jpg */,
+				D51F1AAA18E26B2600555468 /* EIPhotoEditor-Info.plist */,
+				D51F1AAB18E26B2600555468 /* InfoPlist.strings */,
+				D51F1AAE18E26B2600555468 /* main.m */,
+				D51F1AB018E26B2600555468 /* EIPhotoEditor-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D51F1AC118E26B2600555468 /* EIPhotoEditorTests */ = {
+			isa = PBXGroup;
+			children = (
+				D51F1AC718E26B2600555468 /* EIPhotoEditorTests.m */,
+				D51F1AC218E26B2600555468 /* Supporting Files */,
+			);
+			path = EIPhotoEditorTests;
+			sourceTree = "<group>";
+		};
+		D51F1AC218E26B2600555468 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D51F1AC318E26B2600555468 /* EIPhotoEditorTests-Info.plist */,
+				D51F1AC418E26B2600555468 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D51F1A9E18E26B2600555468 /* EIPhotoEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D51F1ACB18E26B2600555468 /* Build configuration list for PBXNativeTarget "EIPhotoEditor" */;
+			buildPhases = (
+				D51F1A9B18E26B2600555468 /* Sources */,
+				D51F1A9C18E26B2600555468 /* Frameworks */,
+				D51F1A9D18E26B2600555468 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EIPhotoEditor;
+			productName = EIPhotoEditor;
+			productReference = D51F1A9F18E26B2600555468 /* EIPhotoEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D51F1AB918E26B2600555468 /* EIPhotoEditorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D51F1ACE18E26B2600555468 /* Build configuration list for PBXNativeTarget "EIPhotoEditorTests" */;
+			buildPhases = (
+				D51F1AB618E26B2600555468 /* Sources */,
+				D51F1AB718E26B2600555468 /* Frameworks */,
+				D51F1AB818E26B2600555468 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D51F1AC018E26B2600555468 /* PBXTargetDependency */,
+			);
+			name = EIPhotoEditorTests;
+			productName = EIPhotoEditorTests;
+			productReference = D51F1ABA18E26B2600555468 /* EIPhotoEditorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D51F1A9718E26B2600555468 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EI;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Everimaging;
+				TargetAttributes = {
+					D51F1A9E18E26B2600555468 = {
+						DevelopmentTeam = 7YNK8EZZR8;
+					};
+					D51F1AB918E26B2600555468 = {
+						TestTargetID = D51F1A9E18E26B2600555468;
+					};
+				};
+			};
+			buildConfigurationList = D51F1A9A18E26B2600555468 /* Build configuration list for PBXProject "EIPhotoEditor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D51F1A9618E26B2600555468;
+			productRefGroup = D51F1AA018E26B2600555468 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D51F1A9E18E26B2600555468 /* EIPhotoEditor */,
+				D51F1AB918E26B2600555468 /* EIPhotoEditorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D51F1A9D18E26B2600555468 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5034FC318E2C3E200CD4E2E /* com.everimaging.photosdk.effect.4 in Resources */,
+				654F55D318FD2C4F0037BB6B /* EIPhotoSDKResources.bundle in Resources */,
+				D5034FD618E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.2 in Resources */,
+				D514C6FB18EBF44F00CF9C06 /* sdk_edit_fotor_sdk.png in Resources */,
+				D5034FD718E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.3 in Resources */,
+				D5034FCA18E2C3EA00CD4E2E /* com.everimaging.photosdk.frame.3 in Resources */,
+				D5034FCD18E2C3F100CD4E2E /* com.everimaging.photosdk.font.1 in Resources */,
+				D5034FC118E2C3E200CD4E2E /* com.everimaging.photosdk.effect.2 in Resources */,
+				D5034FBA18E2C3D700CD4E2E /* EIPhotoSDKLocalSetting.plist in Resources */,
+				D51F1AAD18E26B2600555468 /* InfoPlist.strings in Resources */,
+				D5034FC918E2C3EA00CD4E2E /* com.everimaging.photosdk.frame.2 in Resources */,
+				D5034FD818E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.4 in Resources */,
+				D5034FC018E2C3E200CD4E2E /* com.everimaging.photosdk.effect.1 in Resources */,
+				D5034FCE18E2C3F100CD4E2E /* com.everimaging.photosdk.font.2 in Resources */,
+				D514C6FC18EBF44F00CF9C06 /* sdk_edit_fotor_sdk@2x.png in Resources */,
+				D5034FD918E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.5 in Resources */,
+				D5034FC818E2C3EA00CD4E2E /* com.everimaging.photosdk.frame.1 in Resources */,
+				D51F1AB518E26B2600555468 /* Images.xcassets in Resources */,
+				D5034FC418E2C3E200CD4E2E /* com.everimaging.photosdk.effect.5 in Resources */,
+				D5034FD518E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.1 in Resources */,
+				D5034FDA18E2C3FA00CD4E2E /* com.everimaging.photosdk.sticker.6 in Resources */,
+				D5034FE318E2CC2400CD4E2E /* sample.jpg in Resources */,
+				D5034FC218E2C3E200CD4E2E /* com.everimaging.photosdk.effect.3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D51F1AB818E26B2600555468 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D51F1AC618E26B2600555468 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D51F1A9B18E26B2600555468 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D51F1AB318E26B2600555468 /* EIAppDelegate.m in Sources */,
+				D51F1AAF18E26B2600555468 /* main.m in Sources */,
+				D51F1AD418E26B4E00555468 /* EIMainViewController.m in Sources */,
+				D514C70318EC139E00CF9C06 /* MyButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D51F1AB618E26B2600555468 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D51F1AC818E26B2600555468 /* EIPhotoEditorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D51F1AC018E26B2600555468 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D51F1A9E18E26B2600555468 /* EIPhotoEditor */;
+			targetProxy = D51F1ABF18E26B2600555468 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D51F1AAB18E26B2600555468 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D51F1AAC18E26B2600555468 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D51F1AC418E26B2600555468 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D51F1AC518E26B2600555468 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D51F1AC918E26B2600555468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D51F1ACA18E26B2600555468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D51F1ACC18E26B2600555468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EIPhotoEditor/EIPhotoEditor-Prefix.pch";
+				INFOPLIST_FILE = "EIPhotoEditor/EIPhotoEditor-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EIPhotoEditor/FotorSDK",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D51F1ACD18E26B2600555468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EIPhotoEditor/EIPhotoEditor-Prefix.pch";
+				INFOPLIST_FILE = "EIPhotoEditor/EIPhotoEditor-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EIPhotoEditor/FotorSDK",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D51F1ACF18E26B2600555468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EIPhotoEditor.app/EIPhotoEditor";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EIPhotoEditor/EIPhotoEditor-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "EIPhotoEditorTests/EIPhotoEditorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D51F1AD018E26B2600555468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EIPhotoEditor.app/EIPhotoEditor";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EIPhotoEditor/EIPhotoEditor-Prefix.pch";
+				INFOPLIST_FILE = "EIPhotoEditorTests/EIPhotoEditorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D51F1A9A18E26B2600555468 /* Build configuration list for PBXProject "EIPhotoEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D51F1AC918E26B2600555468 /* Debug */,
+				D51F1ACA18E26B2600555468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D51F1ACB18E26B2600555468 /* Build configuration list for PBXNativeTarget "EIPhotoEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D51F1ACC18E26B2600555468 /* Debug */,
+				D51F1ACD18E26B2600555468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D51F1ACE18E26B2600555468 /* Build configuration list for PBXNativeTarget "EIPhotoEditorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D51F1ACF18E26B2600555468 /* Debug */,
+				D51F1AD018E26B2600555468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D51F1A9718E26B2600555468 /* Project object */;
+}

@@ -1,0 +1,48 @@
+{
+    "version": "1",
+    "packageKey": "com.everimaging.photosdk.frame.2",
+    "title": "Style",
+    "iconName":"edit_two_menu_frames_style_2",
+    "classes": [
+                {
+                "id": "29",
+                "title": "Just Black",
+                "type": "M",
+                "resName": "29M.png",
+                "mThickness": "0.12",
+                "sThickness": "0.23"
+                },
+                {
+                "id": "23",
+                "title": "Jet White",
+                "type": "M",
+                "resName": "23M.png",
+                "mThickness": "0.1",
+                "sThickness": "0.27"
+                },
+                {
+                "id": "38",
+                "title": "Videos",
+                "type": "M",
+                "resName": "38M.png",
+                "mThickness": "0.5",
+                "sThickness": "0.8"
+                },
+                {
+                "id": "36",
+                "title": "APS Frame",
+                "type": "M",
+                "resName": "36M.png",
+                "mThickness": "0.6",
+                "sThickness": "0.8"
+                },
+                {
+                "id": "2",
+                "title": "Seabed",
+                "type": "M",
+                "resName": "2M.png",
+                "mThickness": "0.05",
+                "sThickness": "0.1"
+                }
+                ]
+}

@@ -1,0 +1,28 @@
+{
+    "version": "1",
+    "packageKey": "com.everimaging.photosdk.effect.4",
+    "title": "Retro",
+    "iconName":"edit_two_menu_effects_style_4",
+    "classes": [
+                {
+                "id": "16",
+                "title": "Pale-Ocre"
+                },
+                {
+                "id": "8",
+                "title": "Warm"
+                },
+                {
+                "id": "9",
+                "title": "WarmGreen"
+                },
+                {
+                "id": "104",
+                "title": "Inkwell"
+                },
+                {
+                "id": "17",
+                "title": "Purple"
+                }
+                ]
+}

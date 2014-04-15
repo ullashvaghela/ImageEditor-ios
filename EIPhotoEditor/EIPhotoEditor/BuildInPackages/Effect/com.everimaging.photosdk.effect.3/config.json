@@ -1,0 +1,28 @@
+{
+    "version": "1",
+    "packageKey": "com.everimaging.photosdk.effect.3",
+    "title": "Old Picture",
+    "iconName":"edit_two_menu_effects_style_3",
+    "classes": [
+                {
+                "id": "6",
+                "title": "Hippie"
+                },
+                {
+                "id": "10",
+                "title": "Toy"
+                },
+                {
+                "id": "114",
+                "title": "Scrach"
+                },
+                {
+                "id": "112",
+                "title": "B&W"
+                },
+                {
+                "id": "111",
+                "title": "Grayscale"
+                }
+                ]
+}

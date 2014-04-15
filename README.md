@@ -36,7 +36,18 @@ Get more info and downloads of ImageEditor (for iOS and Android) via [the ImageE
 	* iOS: Compatible with iOS 6.0 or higher.
 	* GUI layout: The easiest and best iOS7-inspired interface, compatible with iPad and iPhone.
 
-## More Information
+
+## Usage ##
+
+ `git clone https://github.com/koluray/ImageEditor-ios.git`
+
+ `cd ImageEditor-ios`
+
+ `git submodule init`
+
+ `git submodule update`
+
+## More Information ##
 
 * There's lots more information on the [wiki](https://github.com/koluray/ImageEditor-ios/wiki).
 

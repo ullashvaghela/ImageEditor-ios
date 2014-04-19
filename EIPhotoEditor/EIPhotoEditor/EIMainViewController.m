@@ -15,6 +15,8 @@
 #error this file is ARC only. Either turn on ARC for the project or use -fobjc-arc flag
 #endif
 
+static CGFloat const kBottombarHeight = 60.0f;
+
 @interface EIMainViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIPopoverControllerDelegate, EIPhotoSDKEditorControllerDelegate>
 
 @end
@@ -24,7 +26,6 @@
     @private
     UIImageView *_imageView;    // Used for displaying image
     UIPopoverController *_popover; // Used for holding image picker in iPad
-    UIButton *_buttonPicker;
     UIImageView* _noPhotoView;
     UIActivityIndicatorView* _saveImageActivityIndicator;
     NSMutableArray *_editorSessions;    //Save editor sessions
@@ -53,6 +54,7 @@
     self.navigationItem.leftBarButtonItem = nil;
     self.navigationItem.rightBarButtonItem = nil;
     self.title = NSLocalizedString(@"Photo Editor", nil);
+    self.view.backgroundColor = [UIColor colorWithRed:35.f/255.f green:39.f/255.f blue:48.f/255.f alpha:1.0];
     
     /*
     // register kEIPhotoEditorSessionCancelledNotification notificaton (posted when session (edier controller) closed)
@@ -70,7 +72,7 @@
     }
 }
 
-- (void)didClickButtonPicker
+- (void)didClickButtonPicker:(UIButton *)sender
 {
     _isImagePickerShowed = YES;
     //Use UIImagePickerController to pick up an image
@@ -81,7 +83,8 @@
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
         [self presentViewController:imagePicker animated:YES completion:nil];
     }else {
-        [self presentViewControllerInPopover:imagePicker];
+        CGRect sourceRect = [sender convertRect:sender.frame toView:self.view];
+        [self presentViewControllerInPopover:imagePicker fromRect:sourceRect];
     }
 }
 
@@ -190,10 +193,8 @@
 }
 
 #pragma mark UIPopoverController for iPad
-- (void)presentViewControllerInPopover:(UIViewController *)controller
+- (void)presentViewControllerInPopover:(UIViewController *)controller fromRect:(CGRect)sourceRect
 {
-    CGRect sourceRect = [_buttonPicker.superview convertRect:_buttonPicker.frame toView:self.view] ;
-    
     _popover = [[UIPopoverController alloc] initWithContentViewController:controller];
     _popover.delegate = self;
     [_popover presentPopoverFromRect:sourceRect inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
@@ -294,74 +295,25 @@
 
 - (void)setupView
 {
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor colorWithRed:35.f/255.f green:39.f/255.f blue:48.f/255.f alpha:1.0];
-    
-    CGRect buttonViewFrame = CGRectMake(0, self.view.bounds.size.height - 60, self.view.bounds.size.width, 60);
-    UIView* buttonView = [[UIView alloc] initWithFrame:buttonViewFrame];
-    buttonView.backgroundColor = [UIColor colorWithRed:65.f/255.f green:72.f/255.f blue:80.f/255.f alpha:0.9];
-    buttonView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
-    [self.view addSubview:buttonView];
-    
-    MyButton *buttonPicker = [[MyButton alloc] init];  //Image selector
-    MyButton *buttonEditor = [[MyButton alloc] init];  //Image editor
-    buttonPicker.bounds = buttonEditor.bounds = CGRectMake(0, 0, self.view.bounds.size.width / 2, buttonViewFrame.size.height);
-    buttonPicker.titleLabel.font = buttonEditor.titleLabel.font = [UIFont fontWithName:@"Helvetica-Light" size:16];
-    [buttonPicker setTitle:NSLocalizedString(@"Select an image", nil) forState:UIControlStateNormal];
-    [buttonEditor setTitle:NSLocalizedString(@"Edit sample image", nil) forState:UIControlStateNormal];
-    
-    buttonPicker.backgroundColor = buttonEditor.backgroundColor = [UIColor clearColor];
-    buttonPicker.highlightBackgroudColor = buttonEditor.highlightBackgroudColor = [UIColor colorWithRed:28.f/255.f green:31.f/255.f blue:39.f/255.f alpha:0.6];
-    buttonPicker.selectedBackgroundColor = buttonEditor.selectedBackgroundColor = [UIColor colorWithRed:28.f/255.f green:31.f/255.f blue:39.f/255.f alpha:0.6];
-    buttonPicker.center = CGPointMake(buttonPicker.bounds.size.width * 0.5, buttonViewFrame.size.height * 0.5);
-    buttonEditor.center = CGPointMake(buttonViewFrame.size.width - buttonEditor.bounds.size.width * 0.5, buttonViewFrame.size.height * 0.5);
-    
-    UIColor* normalColor = [UIColor colorWithRed:179.f/255.f green:194.f/255.f blue:214.f/255.f alpha:1.0];
-    UIColor* selectedColor = [UIColor colorWithRed:0.f green:192.f/255.f blue:255.f/255.f alpha:1.0];
-    [buttonPicker setTitleColor:normalColor forState:UIControlStateNormal];
-    [buttonPicker setTitleColor:selectedColor forState:UIControlStateHighlighted];
-    [buttonPicker setTitleColor:selectedColor forState:UIControlStateSelected];
-    [buttonPicker setTitleColor:selectedColor forState:UIControlStateHighlighted | UIControlStateSelected];
-    
-    [buttonEditor setTitleColor:normalColor forState:UIControlStateNormal];
-    [buttonEditor setTitleColor:selectedColor forState:UIControlStateHighlighted];
-    [buttonEditor setTitleColor:selectedColor forState:UIControlStateSelected];
-    [buttonEditor setTitleColor:selectedColor forState:UIControlStateHighlighted | UIControlStateSelected];
-    
-    buttonPicker.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleRightMargin;
-    buttonEditor.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin;
-    [buttonView addSubview:buttonPicker];
-    [buttonView addSubview:buttonEditor];
-    
-    [buttonPicker addTarget:self action:@selector(didClickButtonPicker) forControlEvents:UIControlEventTouchUpInside];
-    [buttonEditor addTarget:self action:@selector(didClickButtonEditor) forControlEvents:UIControlEventTouchUpInside];
-    
-    _buttonPicker = buttonPicker;
-    
-    UIView* splitView = [[UIView alloc] initWithFrame:CGRectMake(buttonPicker.bounds.size.width, 0, 1, buttonViewFrame.size.height)];
-    splitView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.3];
-    splitView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
-    [buttonView addSubview:splitView];
+    [self setupBottombar];
     
     CGRect imageViewFrame = self.view.bounds;
-    CGFloat padding = 6.f;
+    static const CGFloat padding = 6.f;
     imageViewFrame.origin.x = padding;
     imageViewFrame.size.width = (imageViewFrame.size.width - padding * 2);
     
     CGRect navBarFrame = self.navigationController.navigationBar.frame;
+    imageViewFrame.origin.y = padding + navBarFrame.size.height;
+    imageViewFrame.size.height -= kBottombarHeight + padding * 2 + navBarFrame.size.height;
     if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")) {
         CGRect statusFrame = [UIApplication sharedApplication].statusBarFrame;
-        imageViewFrame.origin.y = padding + navBarFrame.origin.y + navBarFrame.size.height;
-        imageViewFrame.size.height -= (buttonView.bounds.size.height + padding * 2 + statusFrame.size.height + navBarFrame.size.height);
-    }
-    else {
-        imageViewFrame.origin.y = padding + navBarFrame.size.height;
-        imageViewFrame.size.height -= (buttonView.bounds.size.height + padding * 2 + navBarFrame.size.height);
+        imageViewFrame.origin.y += navBarFrame.origin.y;
+        imageViewFrame.size.height -= statusFrame.size.height;
     }
     
     _noPhotoView = [[UIImageView alloc] initWithFrame:imageViewFrame];
     _noPhotoView.contentMode = UIViewContentModeCenter;
-    _noPhotoView.image = [UIImage imageNamed:@"sdk_edit_fotor_sdk"];
+    _noPhotoView.image = [UIImage imageNamed:@"sdk_edit_fotor_sdk.png"];
     _noPhotoView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [self.view addSubview:_noPhotoView];
     
@@ -369,7 +321,56 @@
     _imageView.contentMode = UIViewContentModeScaleAspectFit;
     _imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [self.view addSubview:_imageView];
+}
+
+- (void)setupBottombar
+{
+    CGRect bottomContainerFrame = CGRectMake(0, self.view.bounds.size.height - kBottombarHeight, self.view.bounds.size.width, kBottombarHeight);
+    UIView* bottomContainer = [[UIView alloc] initWithFrame:bottomContainerFrame];
+    bottomContainer.backgroundColor = [UIColor colorWithRed:65.f/255.f green:72.f/255.f blue:80.f/255.f alpha:0.9];
+    bottomContainer.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
+    [self.view addSubview:bottomContainer];
     
+    // right button
+    MyButton *buttonEditor = [[MyButton alloc] init];  //Image editor
+    buttonEditor.titleLabel.font = [UIFont fontWithName:@"Helvetica-Light" size:16];
+    buttonEditor.bounds = CGRectMake(0, 0, self.view.bounds.size.width / 2, bottomContainerFrame.size.height);
+    [buttonEditor setTitle:NSLocalizedString(@"Edit sample image", nil) forState:UIControlStateNormal];
+    [buttonEditor addTarget:self action:@selector(didClickButtonEditor) forControlEvents:UIControlEventTouchUpInside];
+    buttonEditor.backgroundColor = [UIColor clearColor];
+    buttonEditor.highlightBackgroudColor = [UIColor colorWithRed:28.f/255.f green:31.f/255.f blue:39.f/255.f alpha:0.6];
+    buttonEditor.selectedBackgroundColor = [UIColor colorWithRed:28.f/255.f green:31.f/255.f blue:39.f/255.f alpha:0.6];
+    buttonEditor.center = CGPointMake(bottomContainerFrame.size.width - buttonEditor.bounds.size.width * 0.5, bottomContainerFrame.size.height * 0.5);
+    UIColor* normalColor = [UIColor colorWithRed:179.f/255.f green:194.f/255.f blue:214.f/255.f alpha:1.0];
+    UIColor* selectedColor = [UIColor colorWithRed:0.f green:192.f/255.f blue:255.f/255.f alpha:1.0];
+    [buttonEditor setTitleColor:normalColor forState:UIControlStateNormal];
+    [buttonEditor setTitleColor:selectedColor forState:UIControlStateHighlighted];
+    [buttonEditor setTitleColor:selectedColor forState:UIControlStateSelected];
+    [buttonEditor setTitleColor:selectedColor forState:UIControlStateHighlighted | UIControlStateSelected];
+    buttonEditor.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin;
+    [bottomContainer addSubview:buttonEditor];
+    
+    // letf button
+    MyButton *buttonPicker = [[MyButton alloc] init];  //Image selector
+    buttonPicker.bounds  = buttonEditor.bounds;
+    buttonPicker.titleLabel.font = buttonEditor.titleLabel.font;
+    [buttonPicker setTitle:NSLocalizedString(@"Select an image", nil) forState:UIControlStateNormal];
+    [buttonPicker addTarget:self action:@selector(didClickButtonPicker:) forControlEvents:UIControlEventTouchUpInside];
+    buttonPicker.backgroundColor = [UIColor clearColor];
+    buttonPicker.highlightBackgroudColor = buttonEditor.highlightBackgroudColor;
+    buttonPicker.selectedBackgroundColor = buttonEditor.selectedBackgroundColor;
+    buttonPicker.center = CGPointMake(buttonPicker.bounds.size.width * 0.5, bottomContainerFrame.size.height * 0.5);
+    [buttonPicker setTitleColor:normalColor forState:UIControlStateNormal];
+    [buttonPicker setTitleColor:selectedColor forState:UIControlStateHighlighted];
+    [buttonPicker setTitleColor:selectedColor forState:UIControlStateSelected];
+    [buttonPicker setTitleColor:selectedColor forState:UIControlStateHighlighted | UIControlStateSelected];
+    buttonPicker.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleRightMargin;
+    [bottomContainer addSubview:buttonPicker];
+    
+    UIView* splitView = [[UIView alloc] initWithFrame:CGRectMake(buttonPicker.bounds.size.width, 0, 1, bottomContainerFrame.size.height)];
+    splitView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.3];
+    splitView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
+    [bottomContainer addSubview:splitView];
 }
 
 @end

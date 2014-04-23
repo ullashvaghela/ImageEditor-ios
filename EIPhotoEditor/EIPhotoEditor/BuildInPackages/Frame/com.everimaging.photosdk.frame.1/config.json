@@ -1,46 +1,37 @@
 {
     "version": "1",
-    "packageKey": "com.everimaging.photosdk.frame.1",
+    "package_key": "com.everimaging.photosdk.frame.1",
     "title": "Simple",
-    "iconName":"edit_two_menu_frames_style_1",
+    "icon_normal":"edit_two_menu_frames_style_1default.png",
+    "icon_pressed":"edit_two_menu_frames_style_1pressed.png",
     "classes": [
                 {
-                "id": "43",
+                "algorithm_file": "frame.43.S.v0_2_1_1.algorithm",
                 "title": "Memory",
-                "type": "S",
-                "resName": "43S.png",
                 "mThickness": "0.05",
                 "sThickness": "0.05"
                 },
                 {
-                "id": "30",
+                "algorithm_file": "frame.30.S.v0_2_1_1.algorithm",
                 "title": "Old TV",
-                "type": "S",
-                "resName": "30S.png",
                 "mThickness": "0.05",
                 "sThickness": "0.05"
                 },
                 {
-                "id": "51",
+                "algorithm_file": "frame.51.S.v0_2_1_1.algorithm",
                 "title": "Oil Slick",
-                "type": "S",
-                "resName": "51S.png",
                 "mThickness": "0.05",
                 "sThickness": "0.05"
                 },
                 {
-                "id": "49",
+                "algorithm_file": "frame.49.S.v0_2_1_1.algorithm",
                 "title": "Moment",
-                "type": "S",
-                "resName": "49S.png",
                 "mThickness": "0.05",
                 "sThickness": "0.05"
                 },
                 {
-                "id": "37",
+                "algorithm_file": "frame.37.S.v0_2_1_1.algorithm",
                 "title": "Film",
-                "type": "S",
-                "resName": "37S.png",
                 "mThickness": "0.05",
                 "sThickness": "0.05"
                 }

@@ -1,27 +1,28 @@
 {
     "version": "1",
-    "packageKey": "com.everimaging.photosdk.effect.5",
+	"package_key": "com.everimaging.photosdk.effect.5",
     "title": "Vintage",
-    "iconName":"edit_two_menu_effects_style_5",
+    "icon_normal":"edit_two_menu_effects_style_5default.png",
+    "icon_pressed":"edit_two_menu_effects_style_5pressed.png",
     "classes": [
                 {
-                "id": "108",
+				"algorithm_file": "effect.108.v0_2_1_1.algorithm",
                 "title": "Blue"
                 },
                 {
-                "id": "109",
+				"algorithm_file": "effect.109.v0_2_1_1.algorithm",
                 "title": "Virginia"
                 },
                 {
-                "id": "110",
+				"algorithm_file": "effect.110.v0_2_1_1.algorithm",
                 "title": "DeepBlue"
                 },
                 {
-                "id": "93",
+				"algorithm_file": "effect.93.v0_2_1_1.algorithm",
                 "title": "GreenGlow"
                 },
                 {
-                "id": "6",
+				"algorithm_file": "effect.6.v0_2_1_1.algorithm",
                 "title": "Sunset"
                 }
                 ]

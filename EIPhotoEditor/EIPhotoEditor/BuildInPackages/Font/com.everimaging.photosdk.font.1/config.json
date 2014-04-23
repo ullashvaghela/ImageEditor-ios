@@ -1,113 +1,80 @@
 {
     "version": "1",
-    "packageKey": "com.everimaging.photosdk.font.1",
+    "package_key": "com.everimaging.photosdk.font.1",
     "title": "System",
-    "iconName":"text_store_btn_package_2",
-    "classes": [                
+    "icon_normal":"text_store_btn_package_2default.png",
+    "icon_pressed":"text_store_btn_package_2pressed.png",
+    "classes": [
                 {
-                "orderWeight":"1",
-                "id": "1",
                 "title": "American Typewriter",
                 "normal": "AmericanTypewriter"
                 },
                 {
-                "orderWeight":"2",
-                "id": "2",
                 "title": "Avenir Light",
                 "normal": "Avenir-Light"
                 },
                 {
-                "orderWeight":"3",
-                "id": "3",
                 "title": "Avenir Next Ultra Light",
                 "normal": "AvenirNext-UltraLight"
                 },
                 {
-                "orderWeight":"4",
-                "id": "4",
                 "title": "Bodoni 72 Book",
                 "normal": "BodoniSvtyTwoITCTT-Book"
                 },
                 {
-                "orderWeight":"5",
-                "id": "5",
                 "title": "Didot",
                 "normal": "Didot"
                 },
                 {
-                "orderWeight":"6",
-                "id": "6",
                 "title": "Futura Medium",
                 "normal": "Futura-Medium",
                 "italic": "Futura-MediumItalic"
                 },
                 {
-                "orderWeight":"7",
-                "id": "7",
                 "title": "Georgia",
                 "normal": "Georgia"
                 },
                 {
-                "orderWeight":"8",
-                "id": "8",
                 "title": "Gill Sans Light",
                 "normal": "GillSans-Light",
                 "italic": "GillSans-LightItalic"
                 },
                 {
-                "orderWeight":"9",
-                "id": "9",
                 "title": "Helvetica Bold",
                 "bold": "Helvetica-Bold"
                 },
                 {
-                "orderWeight":"10",
-                "id": "10",
                 "title": "Helvetica Neue UltraLight",
                 "normal": "HelveticaNeue-UltraLight"
                 },
                 {
-                "orderWeight":"11",
-                "id": "11",
                 "title": "Marker Felt Thin",
                 "normal": "MarkerFelt-Thin"
                 },
                 {
-                "orderWeight":"12",
-                "id": "12",
                 "title": "Marion",
                 "normal": "Marion-Regular",
                 "italic": "Marion-Italic",
                 "bold": "Marion-Bold"
                 },
                 {
-                "orderWeight":"13",
-                "id": "13",
                 "title": "Noteworthy",
                 "normal": "Noteworthy-Light",
                 "bold": "Noteworthy-Bold"
                 },
                 {
-                "orderWeight":"14",
-                "id": "14",
                 "title": "Optima ExtraBlack",
                 "bold": "Optima-ExtraBlack"
                 },
                 {
-                "orderWeight":"15",
-                "id": "15",
                 "title": "Savoye LET Plain",
                 "normal": "SavoyeLETPlain"
                 },
                 {
-                "orderWeight":"16",
-                "id": "16",
                 "title": "Snell Roundhand",
                 "italic": "SnellRoundhand"
                 },
                 {
-                "orderWeight":"17",
-                "id": "17",
                 "title": "Superclarendon",
                 "normal": "Superclarendon-Regular",
                 "bold": "Superclarendon-Bold",
@@ -115,14 +82,10 @@
                 "boldItalic": "Superclarendon-BlackItalic"
                 },
                 {
-                "orderWeight":"18",
-                "id": "18",
                 "title": "Times New Roman",
                 "normal": "TimesNewRomanPSMT"
                 },
                 {
-                "orderWeight":"19",
-                "id": "19",
                 "title": "Verdana",
                 "normal": "Verdana"
                 }

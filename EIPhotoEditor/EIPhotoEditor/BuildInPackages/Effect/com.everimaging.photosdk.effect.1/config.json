@@ -1,39 +1,40 @@
 {
     "version": "1",
-    "packageKey": "com.everimaging.photosdk.effect.1",
+    "package_key": "com.everimaging.photosdk.effect.1",
     "title": "Analog",
-    "iconName":"edit_two_menu_effects_style_1",
+    "icon_normal":"edit_two_menu_effects_style_1default.png",
+    "icon_pressed":"edit_two_menu_effects_style_1pressed.png",
     "classes": [
                 {
-                "id": "11",
+                "algorithm_file": "effect.11.v0_2_1_1.algorithm",
                 "title": "Pittsburgh"
                 },
                 {
-                "id": "74",
+                "algorithm_file": "effect.74.v0_2_1_1.algorithm",
                 "title": "Dawn Light"
                 },
                 {
-                "id": "76",
+                "algorithm_file": "effect.76.v0_2_1_1.algorithm",
                 "title": "Nostalgic"
                 },
                 {
-                "id": "75",
+                "algorithm_file": "effect.75.v0_2_1_1.algorithm",
                 "title": "Real-illusion"
                 },
                 {
-                "id": "73",
+                "algorithm_file": "effect.73.v0_2_1_1.algorithm",
                 "title": "Mini-Oven"
                 },
                 {
-                "id": "80",
+                "algorithm_file": "effect.80.v0_2_1_1.algorithm",
                 "title": "RedWash"
                 },
                 {
-                "id": "78",
+                "algorithm_file": "effect.78.v0_2_1_1.algorithm",
                 "title": "HotFudge"
                 },
                 {
-                "id": "27",
+                "algorithm_file": "effect.27.v0_2_1_1.algorithm",
                 "title": "Straight Ink"
                 }
                 ]

@@ -1,46 +1,37 @@
 {
     "version": "1",
-    "packageKey": "com.everimaging.photosdk.frame.3",
+    "package_key": "com.everimaging.photosdk.frame.3",
     "title": "Gallery",
-    "iconName":"edit_two_menu_frames_style_3",
+    "icon_normal":"edit_two_menu_frames_style_3default.png",
+    "icon_pressed":"edit_two_menu_frames_style_3pressed.png",
     "classes": [
                 {
-                "id": "118",
-                "title": "Instant",
-                "type": "M",
-                "resName": "118S.png",
+                "algorithm_file": "frame.118.S.v0_2_1_1.algorithm",
+                "title": "Instant",				
                 "mThickness": "0.14",
                 "sThickness": "0.14"
                 },
                 {
-                "id": "42",
-                "title": "Cleopatra",
-                "type": "M",
-                "resName": "42M.png",
+				"algorithm_file": "frame.42.M.v0_2_1_1.algorithm",
+                "title": "Cleopatra",		
                 "mThickness": "0.1",
                 "sThickness": "0.19"
                 },
                 {
-                "id": "10",
-                "title": "Blue Jeans",
-                "type": "M",
-                "resName": "10M.png",
+				"algorithm_file": "frame.10.M.v0_2_1_1.algorithm",
+                "title": "Blue Jeans",				
                 "mThickness": "0.08",
                 "sThickness": "0.139"
                 },
                 {
-                "id": "3",
-                "title": "Snowflake",
-                "type": "M",
-                "resName": "3M.png",
+				"algorithm_file": "frame.3.M.v0_2_1_1.algorithm",
+                "title": "Snowflake",					
                 "mThickness": "0.05",
                 "sThickness": "0.105"
                 },
                 {
-                "id": "41",
-                "title": "Nile River",
-                "type": "M",
-                "resName": "41M.png",
+				"algorithm_file": "frame.41.M.v0_2_1_1.algorithm",
+                "title": "Nile River",				
                 "mThickness": "0.05",
                 "sThickness": "0.11"
                 }

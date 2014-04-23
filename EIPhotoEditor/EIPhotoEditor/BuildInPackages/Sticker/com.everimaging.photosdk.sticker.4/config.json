@@ -1,72 +1,56 @@
 {
     "version": "1",
-    "packageKey": "com.everimaging.photosdk.sticker.4",
+    "package_key": "com.everimaging.photosdk.sticker.4",
     "title": "Love",
-    "iconName": "edit_two_menu_stickers_style_2",
-    "orderWeight": "1",
-    "classInfo":[
+    "icon_normal":"edit_two_menu_stickers_style_2default.png",
+    "icon_pressed":"edit_two_menu_stickers_style_2pressed.png",
+    "classes":[
                  {
-                 "id": "1",
                  "resName": "stickers_love_1"
                  },
                  {
-                 "id": "2",
                  "resName": "stickers_love_2"
                  },
                  {
-                 "id": "3",
                  "resName": "stickers_love_3"
                  },
                  {
-                 "id": "4",
                  "resName": "stickers_love_4"
                  },
                  {
-                 "id": "5",
                  "resName": "stickers_love_5"
                  },
                  {
-                 "id": "6",
                  "resName": "stickers_love_6"
                  },
                  {
-                 "id": "7",
                  "resName": "stickers_love_7"
                  },
                  {
-                 "id": "8",
                  "resName": "stickers_love_8"
                  },
                  {
-                 "id": "9",
                  "resName": "stickers_love_9"
                  },
                  {
-                 "id": "10",
                  "resName": "stickers_love_10"
                  },
                  {
-                 "id": "11",
                  "resName": "stickers_love_11"
                  },
                  {
-                 "id": "12",
                  "resName": "stickers_love_12"
                  },
                  {
-                 "id": "13",
                  "resName": "stickers_love_13"
                  },
                  {
-                 "id": "14",
                  "resName": "stickers_love_14"
                  },
                  {
-                 "id": "15",
                  "resName": "stickers_love_15"
                  },
                  {
-                 "id": "16",
                  "resName": "stickers_love_16"
                  }
                  ]

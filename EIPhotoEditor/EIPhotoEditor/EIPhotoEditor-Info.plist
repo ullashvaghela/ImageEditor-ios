@@ -21,7 +21,9 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.0.0.7</string>
+	<string>1.0.0.8</string>
+	<key>EIPhotoSDKAPIKey</key>
+	<string>12936f5597641902efc7c0ea8eef1e94b87a1d20</string>
 	<key>EIPhotoSDKLocalPackageSettingKey</key>
 	<string>EIPhotoSDKLocalSetting.plist</string>
 	<key>LSRequiresIPhoneOS</key>

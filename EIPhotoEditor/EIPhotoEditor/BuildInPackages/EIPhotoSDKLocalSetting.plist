@@ -144,23 +144,9 @@
 			<array>
 				<dict>
 					<key>packageKey</key>
-					<string>com.everimaging.photosdk.sticker.1</string>
+					<string>com.everimaging.photosdk.sticker.4</string>
 					<key>packageId</key>
-					<string>Abstract</string>
-					<key>sourceType</key>
-					<string>local</string>
-					<key>isFree</key>
-					<true/>
-					<key>isInstalled</key>
-					<true/>
-					<key>productId</key>
-					<string></string>
-				</dict>
-				<dict>
-					<key>packageKey</key>
-					<string>com.everimaging.photosdk.sticker.2</string>
-					<key>packageId</key>
-					<string>Boom</string>
+					<string>Love</string>
 					<key>sourceType</key>
 					<string>local</string>
 					<key>isFree</key>
@@ -186,9 +172,9 @@
 				</dict>
 				<dict>
 					<key>packageKey</key>
-					<string>com.everimaging.photosdk.sticker.4</string>
+					<string>com.everimaging.photosdk.sticker.5</string>
 					<key>packageId</key>
-					<string>Love</string>
+					<string>Party</string>
 					<key>sourceType</key>
 					<string>local</string>
 					<key>isFree</key>
@@ -200,9 +186,23 @@
 				</dict>
 				<dict>
 					<key>packageKey</key>
-					<string>com.everimaging.photosdk.sticker.5</string>
+					<string>com.everimaging.photosdk.sticker.1</string>
 					<key>packageId</key>
-					<string>Party</string>
+					<string>Happy Time</string>
+					<key>sourceType</key>
+					<string>local</string>
+					<key>isFree</key>
+					<true/>
+					<key>isInstalled</key>
+					<true/>
+					<key>productId</key>
+					<string></string>
+				</dict>
+				<dict>
+					<key>packageKey</key>
+					<string>com.everimaging.photosdk.sticker.2</string>
+					<key>packageId</key>
+					<string>Boom</string>
 					<key>sourceType</key>
 					<string>local</string>
 					<key>isFree</key>

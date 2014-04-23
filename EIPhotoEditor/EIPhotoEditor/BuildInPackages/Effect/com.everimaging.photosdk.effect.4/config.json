@@ -1,27 +1,28 @@
 {
     "version": "1",
-    "packageKey": "com.everimaging.photosdk.effect.4",
+	"package_key": "com.everimaging.photosdk.effect.4",
     "title": "Retro",
-    "iconName":"edit_two_menu_effects_style_4",
+    "icon_normal":"edit_two_menu_effects_style_4default.png",
+    "icon_pressed":"edit_two_menu_effects_style_4pressed.png",
     "classes": [
                 {
-                "id": "16",
+				"algorithm_file": "effect.16.v0_2_1_1.algorithm",
                 "title": "Pale-Ocre"
                 },
                 {
-                "id": "8",
+				"algorithm_file": "effect.8.v0_2_1_1.algorithm",
                 "title": "Warm"
                 },
                 {
-                "id": "9",
+				"algorithm_file": "effect.9.v0_2_1_1.algorithm",
                 "title": "WarmGreen"
                 },
                 {
-                "id": "104",
+				"algorithm_file": "effect.104.v0_2_1_1.algorithm",
                 "title": "Inkwell"
                 },
                 {
-                "id": "17",
+				"algorithm_file": "effect.17.v0_2_1_1.algorithm",
                 "title": "Purple"
                 }
                 ]

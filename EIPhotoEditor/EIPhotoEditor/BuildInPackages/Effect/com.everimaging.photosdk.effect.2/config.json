@@ -1,39 +1,40 @@
 {
     "version": "1",
-    "packageKey": "com.everimaging.photosdk.effect.2",
+    "package_key": "com.everimaging.photosdk.effect.2",
     "title": "Lomo",
-    "iconName":"edit_two_menu_effects_style_2",
+    "icon_normal":"edit_two_menu_effects_style_2default.png",
+    "icon_pressed":"edit_two_menu_effects_style_2pressed.png",
     "classes": [
                 {
-                "id": "103",
+				"algorithm_file": "effect.103.v0_2_1_1.algorithm",
                 "title": "Nashville"
                 },
                 {
-                "id": "1",
+				"algorithm_file": "effect.1.v0_2_1_1.algorithm",
                 "title": "Angel's Kiss"
                 },
                 {
-                "id": "7",
+				"algorithm_file": "effect.7.v0_2_1_1.algorithm",
                 "title": "Warm Yellow"
                 },
                 {
-                "id": "10",
+				"algorithm_file": "effect.10.v0_2_1_1.algorithm",
                 "title": "X-ProII"
                 },
                 {
-                "id": "102",
+				"algorithm_file": "effect.102.v0_2_1_1.algorithm",
                 "title": "Lomo-Fx"
                 },
                 {
-                "id": "5",
+				"algorithm_file": "effect.5.v0_2_1_1.algorithm",
                 "title": "Lomo Life"
                 },
                 {
-                "id": "23",
+				"algorithm_file": "effect.23.v0_2_1_1.algorithm",
                 "title": "Earlybird"
                 },
                 {
-                "id": "4",
+				"algorithm_file": "effect.4.v0_2_1_1.algorithm",
                 "title": "Blue Sepia"
                 }
                 ]

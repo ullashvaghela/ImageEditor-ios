@@ -1,27 +1,28 @@
 {
     "version": "1",
-    "packageKey": "com.everimaging.photosdk.effect.3",
+	"package_key": "com.everimaging.photosdk.effect.3",
     "title": "Old Picture",
-    "iconName":"edit_two_menu_effects_style_3",
+    "icon_normal":"edit_two_menu_effects_style_3default.png",
+    "icon_pressed":"edit_two_menu_effects_style_3pressed.png",
     "classes": [
                 {
-                "id": "6",
+				"algorithm_file": "effect.6.v0_2_1_1.algorithm",
                 "title": "Hippie"
                 },
                 {
-                "id": "10",
+				"algorithm_file": "effect.10.v0_2_1_1.algorithm",
                 "title": "Toy"
                 },
                 {
-                "id": "114",
+				"algorithm_file": "effect.114.v0_2_1_1.algorithm",
                 "title": "Scrach"
                 },
                 {
-                "id": "112",
+				"algorithm_file": "effect.112.v0_2_1_1.algorithm",
                 "title": "B&W"
                 },
                 {
-                "id": "111",
+				"algorithm_file": "effect.111.v0_2_1_1.algorithm",
                 "title": "Grayscale"
                 }
                 ]

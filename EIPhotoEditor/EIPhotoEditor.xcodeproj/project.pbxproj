@@ -10,6 +10,7 @@
 		65403D7818ECF822009B074D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51F1ADF18E26E1B00555468 /* AVFoundation.framework */; };
 		65403D7918ECF85F009B074D /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51F1AE018E26E1B00555468 /* GLKit.framework */; };
 		65403D7A18ECF86E009B074D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51F1ADD18E26DF500555468 /* CoreMedia.framework */; };
+		654E3AC4191CBD1100F1F5F7 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 654E3AC3191CBD1100F1F5F7 /* libstdc++.6.0.9.dylib */; };
 		654F55EC18FD4B4F0037BB6B /* EIPhotoSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 654F55E418FD4B4F0037BB6B /* EIPhotoSDKResources.bundle */; };
 		654F55ED18FD4B4F0037BB6B /* libEIPhotoSDKLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 654F55EB18FD4B4F0037BB6B /* libEIPhotoSDKLibrary.a */; };
 		D5034FBA18E2C3D700CD4E2E /* EIPhotoSDKLocalSetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5034FB918E2C3D700CD4E2E /* EIPhotoSDKLocalSetting.plist */; };
@@ -48,8 +49,6 @@
 		D51F1AD418E26B4E00555468 /* EIMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D51F1AD218E26B4E00555468 /* EIMainViewController.m */; };
 		D51F1AE418E26E1B00555468 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51F1AE118E26E1B00555468 /* OpenGLES.framework */; };
 		D51F1AE618E26E4E00555468 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51F1AE518E26E4E00555468 /* AssetsLibrary.framework */; };
-		D51F1AE918E26E5E00555468 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D51F1AE718E26E5E00555468 /* libc++.dylib */; };
-		D51F1AEA18E26E5E00555468 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D51F1AE818E26E5E00555468 /* libstdc++.dylib */; };
 		D51F1AFE18E2A4CC00555468 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51F1AF918E2A34700555468 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		654E3AC3191CBD1100F1F5F7 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		654F55E418FD4B4F0037BB6B /* EIPhotoSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EIPhotoSDKResources.bundle; sourceTree = "<group>"; };
 		654F55E618FD4B4F0037BB6B /* EIPhotoEditorCustomization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EIPhotoEditorCustomization.h; sourceTree = "<group>"; };
 		654F55E718FD4B4F0037BB6B /* EIPhotoSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EIPhotoSDK.h; sourceTree = "<group>"; };
@@ -128,13 +128,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				654E3AC4191CBD1100F1F5F7 /* libstdc++.6.0.9.dylib in Frameworks */,
 				65403D7A18ECF86E009B074D /* CoreMedia.framework in Frameworks */,
 				65403D7918ECF85F009B074D /* GLKit.framework in Frameworks */,
 				65403D7818ECF822009B074D /* AVFoundation.framework in Frameworks */,
 				654F55ED18FD4B4F0037BB6B /* libEIPhotoSDKLibrary.a in Frameworks */,
 				D51F1AFE18E2A4CC00555468 /* CoreData.framework in Frameworks */,
-				D51F1AE918E26E5E00555468 /* libc++.dylib in Frameworks */,
-				D51F1AEA18E26E5E00555468 /* libstdc++.dylib in Frameworks */,
 				D51F1AE618E26E4E00555468 /* AssetsLibrary.framework in Frameworks */,
 				D51F1AE418E26E1B00555468 /* OpenGLES.framework in Frameworks */,
 				D51F1AA518E26B2600555468 /* CoreGraphics.framework in Frameworks */,
@@ -257,6 +256,7 @@
 		D51F1AA118E26B2600555468 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				654E3AC3191CBD1100F1F5F7 /* libstdc++.6.0.9.dylib */,
 				D51F1AFB18E2A39C00555468 /* MobileCoreServices.framework */,
 				D51F1AF918E2A34700555468 /* CoreData.framework */,
 				D51F1AF718E2A31700555468 /* ImageIO.framework */,
